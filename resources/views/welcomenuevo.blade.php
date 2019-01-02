@@ -62,6 +62,8 @@
                 margin-bottom: 30px;
             }
         </style>
+        <!-- -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -94,5 +96,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/docs.min.js"></script>
     </body>
 </html>

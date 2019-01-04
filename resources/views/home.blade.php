@@ -14,38 +14,26 @@
     <!-- Team Members Row -->
     <div class="row">
 
-        <div class="col-lg-12">
-            <h5 class="my-4 text-center">Mira, estos son algunos de nuestros preciosos amigos</h5>
-        </div>
+        @if (isset($perros) and !is_null($perros))
+            <div class="col-lg-12">
+                <h5 class="my-4 text-center">Mira, estos son algunos de nuestros preciosos amigos ({{count($perros)}})</h5>
+            </div>
+            @foreach ($perros as $perro)
+                <div class="col-lg-4 col-sm-6 text-center mb-4">
+                    <a href="pepita"><img class="rounded-circle img-fluid d-block mx-auto"
+                                          src="/images/Perros/portada{{$perro}}.jpg" alt="">
+                    </a>
+                    <h3>Pepita</h3>
+                    <p><b>Raza:</b> <smal>No se, pero la quiero.</smal><br>¡Adorable!.<br>Se llevarte a mi terreno fácil, me
+                        porto bien en público, te miro con cara de pena... Eso si, no soy lassie ¿eh?.</p>
+                </div>
+            @endforeach
+        @else
+            <div class="col-lg-12">
+                <h5 class="my-4 text-center">Vaya, parece que no hay ninguno...</h5>
+            </div>
+        @endif
 
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <a href="pepita"><img class="rounded-circle img-fluid d-block mx-auto" src="/images/Perros/P2.jpg" alt="">
-            </a>
-            <h3>Pepita</h3>
-            <p><b>Raza:</b> <smal>No se, pero la quiero.</smal><br>¡Adorable!.<br>Se llevarte a mi terreno fácil, me
-                porto bien en público, te miro con cara de pena... Eso si, no soy lassie ¿eh?.</p>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="/images/Perros/P3.jpg" alt="">
-            <h3>Arnold</h3>
-            <p><b>Raza:</b> <smal>Pastor Alemán (Creo).</smal><br>¡Cariñoso!.<br>Cuido niños, alegro
-                a las visitas... Y eso que soy un frío perro aleman... ¡Ah, y todo a 0€!.</p>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="/images/Perros/P4.jpg" alt="">
-            <h3>Pochinky (+1)</h3>
-            <p><b>Raza:</b> <smal>Husky.</smal><br>¡2 x 1!.<br>No paso frío nunca, somos fotogénicos y encima te llevas 2
-                por el precio de 1, ¡Que mas quieres!.</p>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="/images/Perros/P5.jpg" alt="">
-            <h3>Eldelcan</h3>
-            <p><b>Raza:</b> <smal>Labrador.</smal><br>¡Ohhh que monada!.<br>Encima he aprendido a lamer a mi dueño,
-                soy todo ventajas (Collar no incluido).</p>
-        </div>
 
     </div>
 @endsection

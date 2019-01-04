@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('base');
+    return view('home');
+});
+
+Route::get('/pepita', function () {
+    return view('resguardos.pepita');
 });

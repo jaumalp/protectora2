@@ -1,0 +1,21 @@
+.bg-perro {
+    background:transparent url('../images/bg-perro.png') no-repeat center bottom fixed;
+}
+
+.bg-semitransparente {
+    background-color: rgba(220,220,220,0.5);
+}
+
+.bg-huellas {
+    background:#b7bbb7 url('../images/bannerHuellas.png') repeat center;
+}
+
+.text-indent, .text-parrafado {
+    text-indent: 1em;
+}
+
+.text-justify, .text-parrafado {
+    text-justify: auto;
+}
+
+

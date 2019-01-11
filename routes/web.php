@@ -15,5 +15,18 @@ Route::get('/pepita', function () {
     return view('resguardos.pepita');
 });
 
-Route::get('/', 'AnimalController@index');
+Route::get('/animales', 'AnimalController@index');
+
+Route::get('/', function(){
+    return view('home');
+});
+
+Route::get('/quienes-somos', function(){
+    return view('quienes-somos');
+});
+
+Route::get('/ayudanos', function(){
+    return view('ayudanos');
+});
+
 Route::get('/animal/{id}', 'AnimalController@view');

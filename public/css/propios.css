@@ -1,4 +1,4 @@
-.bg-perro {
+.bg-general {
     background:transparent url('../images/bg-perro.png') no-repeat center bottom fixed;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .text-justify, .text-parrafado, .parrafear p {
-    text-justify: auto;
+    text-align: justify;
 }
 
 

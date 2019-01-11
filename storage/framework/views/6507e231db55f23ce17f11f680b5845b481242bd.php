@@ -6,14 +6,18 @@
     <h4 class="pb-4 text-center">¡HOLA GUAP@!<br>
         <small>¡Me llamo <b><?php echo e($animal->nombre); ?></b>!</small>
     </h4>
+
     <?php echo $animal->getHTMLFotoPortada(false) ?>
+
     <p class="mb-3"></p>
 
-    <div class="container parrafear">
+    <div class="container text-parrafado">
         <?php echo $animal->descripcion;; ?>
 
     </div>
 
+
+    <!-- EN PRUEBAS
 
     <div id="inicial">INICIAL</div>
     <div id="codificado">CODIFICADO</div>
@@ -29,7 +33,7 @@
         }
     </script>
 
-
+    <!-- EN PRUEBAS -->
 
 
     <div class="row">
@@ -38,7 +42,7 @@
 
         <?php if(count($urlsFotos)>0): ?>
             <div class="col-lg-12">
-                    <h4 class="m2-4 text-center">¡Mira mis fotos!</h4>
+                    <h4 class="m2-4 text-center mt-3">¡Mira mis fotos!</h4>
             </div>
             <div class="col-lg-12">
                 <h5 class="text-center">Tengo <?php echo e(count($urlsFotos)); ?> ahora mismo...</h5>
@@ -79,7 +83,7 @@
                          src="<?php echo e($una); ?>" alt="">
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            -->
+            <!-- -->
         <?php else: ?>
 
         <?php endif; ?>

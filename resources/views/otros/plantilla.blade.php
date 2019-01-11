@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>@yield('title')</title>
+    <title>@yield('title') (A.P.A Vida)</title>
 
     <!-- Bootstrap-->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -34,7 +34,7 @@
     @include('otros.menuSuperior')
 
     <!-- Contenido de la página -->
-    <div class="container bg-perro pb-5 pt-3">
+    <div class="container bg-general pb-5 pt-3 px-4" style="min-height: 600px">
       @yield('content')
     </div>
 

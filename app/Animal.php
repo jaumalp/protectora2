@@ -16,7 +16,7 @@ class Animal extends Model
 
     public function getHTMLFotoPortada($conLink = true){
         $ret = '';
-        $ret .= '<img class="rounded-circle img-fluid d-block mx-auto" src="';
+        $ret .= '<img style="max-width: 200px; max-height:200px;" class="rounded-circle img-fluid d-block mx-auto" src="';
         $ret .= $this->getUrlPortada().'" alt="">';
 
         if ($conLink)

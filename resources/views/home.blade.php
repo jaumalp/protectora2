@@ -1,41 +1,23 @@
 @extends('otros.plantilla')
 
-@section('title')Pagina de Ejemplo @endsection
+@section('title')Inicio @endsection
 
 @section('content')
     <!-- Introduction Row -->
-    <h4 class="text-center">¿Que quienes somos?<br>
-        <small>¡Perdón por no presentarnos!</small>
-    </h4>
-    <p class="text-parrafado">Somos una protectora de animales pequeñita, solo somos unas pocas personas que queremos
-    y amamos a los mejores compañeros que uno puede tener, ¡los animales de compañia!.</p>
-    <p class="text-parrafado">Necesitamos a gente como tu que pueda ayudarnos, necesitamos apoyo para poder seguir nuestra
-    labor de ayuda...</p>
-    <!-- Team Members Row -->
-    <div class="row">
+    <h4 class="text-center">¿Que quienes somos?<br><small>¡Un breve resumen!</small></h4>
+    <p class="text-parrafado">Somos un grupo de voluntari@s, amantes de los animales que, debido
+    al gran número de mascotas (en su mayoría perros) abandonad@s o maltratad@s en nuestra localidad
+    y a las personas que sufren por esta situación, nos hemos visto obligados a fundar una asociación
+    para defenderlos, protegerlos y buscarles un hogar donde sean felices y así evitar que acaben
+    en la perrera.</p>
 
-        @if (isset($animales) and !is_null($animales))
-            <div class="col-lg-12">
-                <h5 class="my-4 text-center">Mira, estos son algunos de nuestros preciosos amigos ({{count($animales)}})</h5>
-            </div>
-            @foreach ($animales as $animal)
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <?php
-                        if ($animal->getUrlPortada())
-                            echo $animal->getHTMLFotoPortada();
-                        else
-                            echo 'Sin Portada';
-                    ?>
-                    <h3>{{$animal->nombre}}</h3>
-                    <p><b>Raza:</b> <smal>{{$animal->raza}}</smal><br>{{$animal->descripcion}}</p>
-                </div>
-            @endforeach
-        @else
-            <div class="col-lg-12">
-                <h5 class="my-4 text-center">Vaya, parece que no hay ninguno...</h5>
-            </div>
-        @endif
+    <h5 class="text-center">¿Con más detalle?</h5>
+    <p class="text-center"><a href="/quienes-somos">Púlsame para saber más</a></p>
 
+    <h5 class="text-center">¿Quieres ayudarnos?</h5>
+    <p class="text-center"><a href="/ayudanos">Púlsame para ver como puedes</a></p>
 
-    </div>
+    <p class="container"><a href="https://www.facebook.com/APA-Vida-La-Carlota-354465445103672/" target="_blank">
+        <img src="{{asset('images/logo-fondo.png')}}"
+             class="w-100 border-dark rounded shadow-lg"></a></p>
 @endsection

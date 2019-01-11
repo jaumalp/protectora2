@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php echo $__env->yieldContent('title'); ?></title>
+    <title><?php echo $__env->yieldContent('title'); ?> (A.P.A Vida)</title>
 
     <!-- Bootstrap-->
     <link href="<?php echo e(asset('css/bootstrap.min.css')); ?>" rel="stylesheet">
@@ -34,7 +34,7 @@
     <?php echo $__env->make('otros.menuSuperior', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
     <!-- Contenido de la página -->
-    <div class="container bg-perro pb-5 pt-3">
+    <div class="container bg-general pb-5 pt-3 px-4" style="min-height: 600px">
       <?php echo $__env->yieldContent('content'); ?>
     </div>
 

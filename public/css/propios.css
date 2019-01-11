@@ -10,11 +10,11 @@
     background:#b7bbb7 url('../images/bannerHuellas.png') repeat center;
 }
 
-.text-indent, .text-parrafado {
+.text-indent, .text-parrafado, .parrafear p {
     text-indent: 1em;
 }
 
-.text-justify, .text-parrafado {
+.text-justify, .text-parrafado, .parrafear p {
     text-justify: auto;
 }
 

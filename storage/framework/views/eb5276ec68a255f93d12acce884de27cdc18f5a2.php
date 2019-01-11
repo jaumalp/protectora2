@@ -2,7 +2,7 @@
 
 <?php $__env->startSection('content'); ?>
     <!-- Introduction Row -->
-    <h4 class="mb-4 pt-3 text-center">¿Que quienes somos?<br>
+    <h4 class="text-center">¿Que quienes somos?<br>
         <small>¡Perdón por no presentarnos!</small>
     </h4>
     <p class="text-parrafado">Somos una protectora de animales pequeñita, solo somos unas pocas personas que queremos
@@ -12,18 +12,20 @@
     <!-- Team Members Row -->
     <div class="row">
 
-        <?php if(isset($perros) and !is_null($perros)): ?>
+        <?php if(isset($animales) and !is_null($animales)): ?>
             <div class="col-lg-12">
-                <h5 class="my-4 text-center">Mira, estos son algunos de nuestros preciosos amigos (<?php echo e(count($perros)); ?>)</h5>
+                <h5 class="my-4 text-center">Mira, estos son algunos de nuestros preciosos amigos (<?php echo e(count($animales)); ?>)</h5>
             </div>
-            <?php $__currentLoopData = $perros; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $perro): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php $__currentLoopData = $animales; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $animal): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <a href="pepita"><img class="rounded-circle img-fluid d-block mx-auto"
-                                          src="/images/Perros/portada<?php echo e($perro); ?>.jpg" alt="">
-                    </a>
-                    <h3>Pepita</h3>
-                    <p><b>Raza:</b> <smal>No se, pero la quiero.</smal><br>¡Adorable!.<br>Se llevarte a mi terreno fácil, me
-                        porto bien en público, te miro con cara de pena... Eso si, no soy lassie ¿eh?.</p>
+                    <?php
+                        if ($animal->getUrlPortada())
+                            echo $animal->getHTMLFotoPortada();
+                        else
+                            echo 'Sin Portada';
+                    ?>
+                    <h3><?php echo e($animal->nombre); ?></h3>
+                    <p><b>Raza:</b> <smal><?php echo e($animal->raza); ?></smal><br><?php echo e($animal->descripcion); ?></p>
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         <?php else: ?>

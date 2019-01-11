@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
 Route::get('/pepita', function () {
     return view('resguardos.pepita');
 });
+
+Route::get('/', 'AnimalController@index');
+Route::get('/animal/{id}', 'AnimalController@view');

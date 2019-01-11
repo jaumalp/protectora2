@@ -11,38 +11,39 @@
     <title>@yield('title')</title>
 
     <!-- Bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Plantilla -->
-    <link href="css/plantilla.css" rel="stylesheet">
+    <link href="{{asset('css/plantilla.css')}}" rel="stylesheet">
 
     <!-- Propios -->
-    <link href="css/propios.css" rel="stylesheet">
+    <link href="{{asset('css/propios.css')}}" rel="stylesheet">
+
+    <!-- JS del editor con texto rico -->
+    <script src="{{asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+
+    <!-- Necesarios para bootStrap -->
+    <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 
   </head>
 
   <body>
+
     <!-- Menu superior -->
     @include('otros.menuSuperior')
-    <!-- /Menu -->
 
     <!-- Contenido de la página -->
-    <div class="container bg-perro">
+    <div class="container bg-perro pb-5 pt-3">
       @yield('content')
     </div>
-    <!-- /Contenido -->
 
     <!-- Footer -->
-    <footer class="bg-dark py-2">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Jaime L. 2018</p>
-      </div>
-      <!-- /.container -->
+    <footer class="py-2 fixed-bottom bg-huellas border-top border-dark">
+        <div class="row">
+          <div class="col-12 text-white text-center">Copyright &copy; Jaime L. 2018</div>
+        </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
 
   </body>
 

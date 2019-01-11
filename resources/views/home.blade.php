@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Introduction Row -->
-    <h4 class="mb-4 pt-3 text-center">¿Que quienes somos?<br>
+    <h4 class="text-center">¿Que quienes somos?<br>
         <small>¡Perdón por no presentarnos!</small>
     </h4>
     <p class="text-parrafado">Somos una protectora de animales pequeñita, solo somos unas pocas personas que queremos
@@ -14,18 +14,20 @@
     <!-- Team Members Row -->
     <div class="row">
 
-        @if (isset($perros) and !is_null($perros))
+        @if (isset($animales) and !is_null($animales))
             <div class="col-lg-12">
-                <h5 class="my-4 text-center">Mira, estos son algunos de nuestros preciosos amigos ({{count($perros)}})</h5>
+                <h5 class="my-4 text-center">Mira, estos son algunos de nuestros preciosos amigos ({{count($animales)}})</h5>
             </div>
-            @foreach ($perros as $perro)
+            @foreach ($animales as $animal)
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <a href="pepita"><img class="rounded-circle img-fluid d-block mx-auto"
-                                          src="/images/Perros/portada{{$perro}}.jpg" alt="">
-                    </a>
-                    <h3>Pepita</h3>
-                    <p><b>Raza:</b> <smal>No se, pero la quiero.</smal><br>¡Adorable!.<br>Se llevarte a mi terreno fácil, me
-                        porto bien en público, te miro con cara de pena... Eso si, no soy lassie ¿eh?.</p>
+                    <?php
+                        if ($animal->getUrlPortada())
+                            echo $animal->getHTMLFotoPortada();
+                        else
+                            echo 'Sin Portada';
+                    ?>
+                    <h3>{{$animal->nombre}}</h3>
+                    <p><b>Raza:</b> <smal>{{$animal->raza}}</smal><br>{{$animal->descripcion}}</p>
                 </div>
             @endforeach
         @else

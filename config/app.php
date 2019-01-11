@@ -178,6 +178,7 @@ return [
         Protectora\Providers\RouteServiceProvider::class,
 
         /* Creados por MI!!!! */
+        Unisharp\Ckeditor\ServiceProvider::class,
 
     ],
 

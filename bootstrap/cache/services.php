@@ -33,10 +33,12 @@
     29 => 'Carbon\\Laravel\\ServiceProvider',
     30 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     31 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
-    32 => 'Protectora\\Providers\\AppServiceProvider',
-    33 => 'Protectora\\Providers\\AuthServiceProvider',
-    34 => 'Protectora\\Providers\\EventServiceProvider',
-    35 => 'Protectora\\Providers\\RouteServiceProvider',
+    32 => 'Collective\\Html\\HtmlServiceProvider',
+    33 => 'Protectora\\Providers\\AppServiceProvider',
+    34 => 'Protectora\\Providers\\AuthServiceProvider',
+    35 => 'Protectora\\Providers\\EventServiceProvider',
+    36 => 'Protectora\\Providers\\RouteServiceProvider',
+    37 => 'Unisharp\\Ckeditor\\ServiceProvider',
   ),
   'eager' => 
   array (
@@ -59,6 +61,7 @@
     16 => 'Protectora\\Providers\\AuthServiceProvider',
     17 => 'Protectora\\Providers\\EventServiceProvider',
     18 => 'Protectora\\Providers\\RouteServiceProvider',
+    19 => 'Unisharp\\Ckeditor\\ServiceProvider',
   ),
   'deferred' => 
   array (

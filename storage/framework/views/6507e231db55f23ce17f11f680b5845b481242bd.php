@@ -85,7 +85,7 @@
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             <!-- -->
         <?php else: ?>
-
+            <h4 class="text-center mt-3">Solo tengo la foto de arriba, lo siento...</h4>
         <?php endif; ?>
     </div>
 <?php $__env->stopSection(); ?>

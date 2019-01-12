@@ -18,4 +18,6 @@
     text-align: justify;
 }
 
-
+.sin-margen-bottom p {
+    margin-bottom: 0px !important;
+}

@@ -32,6 +32,15 @@
             </div>
         @endif
 
+        @if (Auth::user())
+            <div class="col-lg-4 col-sm-6 text-center sin-margen-bottom mt-3">
+                <hr class="w-75">
+                <a href="#"><img style="max-width: 200px; max-height:200px;" class="rounded-circle img-fluid d-block mx-auto"
+                               src="{{asset('images/nuevo.png')}}" alt=""></a>
+                <h3 class="text-uppercase">Crear Nuevo</h3>
+            </div>
+        @endif
+
 
     </div>
 @endsection

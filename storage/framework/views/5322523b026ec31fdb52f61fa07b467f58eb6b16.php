@@ -30,6 +30,15 @@
             </div>
         <?php endif; ?>
 
+        <?php if(Auth::user()): ?>
+            <div class="col-lg-4 col-sm-6 text-center sin-margen-bottom mt-3">
+                <hr class="w-75">
+                <a href="#"><img style="max-width: 200px; max-height:200px;" class="rounded-circle img-fluid d-block mx-auto"
+                               src="<?php echo e(asset('images/nuevo.png')); ?>" alt=""></a>
+                <h3 class="text-uppercase">Crear Nuevo</h3>
+            </div>
+        <?php endif; ?>
+
 
     </div>
 <?php $__env->stopSection(); ?>

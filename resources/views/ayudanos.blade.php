@@ -12,12 +12,16 @@
 
     <p class="text-parrafado">Tambien puedes ayudarnos con una donación en la cuenta que abajo te mostramos.</p>
 
-    <p class="text-parrafado">Y si quieres, puedes tambien formar parte de nuestro <a href="#">TEAMING</a>,
-        que nos ayudaría muchísimo para darles a nuestros animales lo que necesitan.</p>
-    <p class="text-parrafado">Página de Teaming en CONSTRUCCION, Maria Jesus...</p>
+    <p class="text-parrafado">Y si quieres, puedes tambien formar parte de nuestro
+        <a href="https://www.teaming.net/a-p-avidalacarlota" target="_blank">TEAMING</a>, que nos ayudaría muchísimo
+        para darles a nuestros animales lo que necesitan.</p>
 
     <h5 class="text-center">CUENTA DE DONACIONES</h5>
     <p class="text-center">En Cajasur:<br>ES06 0237 0036 8091 7150 0413</p>
-    <h5 class="text-center">¡GRACIAS!</h5>
 
+    <h5 class="text-center">¿PREFIERES SER TEAMER?</h5>
+    <p class="text-center">¡Claro!, <a href="https://www.teaming.net/a-p-avidalacarlota" target="_blank">sólo tienes
+        que pulsar aqui!.</a> </p>
+
+    <h5 class="text-center mb-3">¡MUCHAS GRACIAS!</h5>
 @endsection

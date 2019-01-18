@@ -29,7 +29,12 @@
 
     <h5 class="text-center">AYUDANOS A AYUDAR</h5>
     <p class="text-center">En Cajasur:<br>ES06 0237 0036 8091 7150 0413</p>
-    <h5 class="text-center">¡GRACIAS!</h5>
+
+    <h5 class="text-center">¿PREFIERES SER TEAMER?</h5>
+    <p class="text-center">¡Claro!, <a href="https://www.teaming.net/a-p-avidalacarlota" target="_blank">sólo tienes
+            que pulsar aqui!.</a> </p>
+
+    <h5 class="text-center">¡MUCHAS GRACIAS!</h5>
 
 <?php $__env->stopSection(); ?>
 

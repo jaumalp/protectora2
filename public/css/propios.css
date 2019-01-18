@@ -21,3 +21,11 @@
 .sin-margen-bottom p {
     margin-bottom: 0px !important;
 }
+
+.navbar-toggler {
+    border: none;
+}
+
+.fa-whatsapp {
+    color: #00cc66;
+}

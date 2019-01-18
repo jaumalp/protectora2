@@ -22,6 +22,10 @@
     <!-- JS del editor con texto rico -->
     <script src="{{asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <!-- Necesarios para bootStrap -->
     <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
@@ -39,12 +43,19 @@
     </div>
 
     <!-- Footer -->
-    <footer class="py-2 fixed-bottom bg-huellas border-top border-dark">
-        <div class="row">
-          <div class="col-12 text-white text-center">Copyright &copy; Jaime L. 2018</div>
+    @include('otros.footer')
+
+  <!-- Footer
+
+    <footer class="pt-5 fixed-bottom border-top border-dark">
+      <div class="row">
+        <div class="col-12 text-white text-left text-primary text-decoration-none">
+          <a href="https://www.facebook.com/APA-Vida-La-Carlota-354465445103672/" target="_blank">
+            <h3><i class="ml-3 fab fa-facebook-square"></i>acebook</h3>
         </div>
-    </footer>
+      </div>
+    </footer></body>
 
+    -->
   </body>
-
 </html>

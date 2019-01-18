@@ -22,7 +22,7 @@
 
                 @if (Auth::check())
                     <li class="nav-item">
-                        <a class="nav-link text-danger" href="/administrar">ADMINISTRAR</a>
+                        <a class="nav-link text-danger" href="/salir">SALIR DE ADMIN</a>
                     </li>
                 @endif
             </ul>
